@@ -1,0 +1,74 @@
+<!doctype html><html lang="zh"><head><meta charset="UTF-8"/>
+<meta name="viewport" content="width=1920,height=1080"/>
+<title>数据治理实战·第2章</title>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<style>@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700;900&display=swap');
+*{margin:0;padding:0;box-sizing:border-box;}
+html,body{width:1920px;height:1080px;overflow:hidden;background:#0a0e1a;font-family:'Noto Sans CJK SC','PingFang SC','Microsoft YaHei',sans-serif;}
+
+#bg-grid{position:fixed;inset:0;opacity:0.05;pointer-events:none;
+  background-image:linear-gradient(rgba(59,130,246,.5) 1px,transparent 1px),
+  linear-gradient(90deg, rgba(59,130,246,.5) 1px,transparent 1px);
+  background-size:60px 60px;}
+.accent{position:fixed;top:0;left:0;right:0;height:4px;
+  background:linear-gradient(90deg,#1e3a6e,#3b82f6,#1e3a6e);z-index:10;}
+.badge{position:fixed;bottom:40px;right:60px;font-size:22px;color:rgba(255,255,255,.2);
+  letter-spacing:.2em;z-index:10;}
+.scene{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;
+  flex-direction:column;opacity:0;pointer-events:none;}
+.scene.active{opacity:1;pointer-events:auto;}
+.title-bg{background:linear-gradient(135deg,#0a1628,#1a3a5c,#0a1628);}
+.title-main{font-size:78px;font-weight:900;color:#fff;letter-spacing:.08em;
+  text-align:center;text-shadow:0 0 80px rgba(59,130,246,.4);}
+.title-sub{font-size:26px;color:#93c5fd;margin-top:20px;letter-spacing:.3em;}
+.title-ch{font-size:20px;color:#60a5fa;margin-top:40px;letter-spacing:.5em;}
+.content-bg{background:linear-gradient(180deg,#0f172a,#1e293b);}
+.content-inner{max-width:1400px;width:100%;padding:0 80px;}
+.content-title{font-size:50px;font-weight:700;color:#fff;margin-bottom:48px;
+  letter-spacing:.05em;position:relative;padding-left:24px;}
+.content-title::before{content:'';position:absolute;left:0;top:10%;height:80%;width:6px;
+  background:linear-gradient(180deg,#3b82f6,#60a5fa);border-radius:3px;}
+.points-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(580px,1fr));gap:18px;}
+.point-card{background:rgba(255,255,255,.04);border:1px solid rgba(59,130,246,.2);
+  border-radius:14px;padding:22px 30px;font-size:28px;color:#e2e8f0;
+  line-height:1.6;display:flex;align-items:flex-start;gap:14px;}
+.point-card::before{content:'▶';color:#3b82f6;font-size:18px;margin-top:4px;flex-shrink:0;}
+.closing-bg{background:linear-gradient(135deg,#0a1628,#1a2a4a);}
+.closing-text{font-size:54px;font-weight:700;color:#fff;text-align:center;
+  letter-spacing:.1em;text-shadow:0 0 40px rgba(59,130,246,.3);}
+.closing-brand{font-size:26px;color:#60a5fa;margin-top:28px;letter-spacing:.4em;}
+</style>
+</head><body>
+<div id="bg-grid"></div><div class="accent"></div>
+<div class="badge">第2/10章</div>
+<div class="scene title-bg" id="s0"><div class="title-main">第二章 主数据二级分类模型：谁该管、谁不该管</div><div class="title-sub">数据治理实战</div><div class="title-ch">第2章</div></div><div class="scene content-bg" id="s1"><div class="content-inner"><div class="content-title" id="t1">传统主数据治理的问题</div><div class="points-grid" id="g1"><div class="point-card">传统思路：把所有主数据列出来，用同一套方法治理。</div><div class="point-card">主数据种类太多，边界模糊</div><div class="point-card">不同主数据的业务价值完全不同</div><div class="point-card">用同一套方法治理所有主数据，成本高、效率低</div><div class="point-card">很多主数据都有系统在管了，还在重复建设</div></div></div></div><div class="scene content-bg" id="s2"><div class="content-inner"><div class="content-title" id="t2">二级主数据分类模型</div><div class="points-grid" id="g2"><div class="point-card">├── 一级主数据（强管控）</div><div class="point-card">│   ├── 核心稳定、跨系统共享、变更不频繁</div><div class="point-card">│   ├── 典型示例：</div><div class="point-card">│   │   ├── 组织架构（公司、部门、分子公司）</div><div class="point-card">│   │   ├── 人员主数据（员工编号、姓名、岗位）</div></div></div></div><div class="scene content-bg" id="s3"><div class="content-inner"><div class="content-title" id="t3">核心洞察</div><div class="points-grid" id="g3"><div class="point-card">二级主数据的真正价值不是"治理"，而是"嵌入业务系统功能设计"。</div><div class="point-card">传统思路：先建主数据平台，再谈应用</div><div class="point-card">米悦说说思路：</div><div class="point-card">一级主数据 → 平台统一管理（标准动作）</div><div class="point-card">二级主数据 → 在业务系统设计时就把数据架构考虑进去</div></div></div></div><div class="scene content-bg" id="s4"><div class="content-inner"><div class="content-title" id="t4">关键判断标准</div><div class="points-grid" id="g4"><div class="point-card">如何判断一个主数据是"一级"还是"二级"？</div><div class="point-card">问自己三个问题：</div><div class="point-card">1. 这个数据会变吗？</div><div class="point-card">├── 几乎不变（3年一动）→ 一级</div><div class="point-card">└── 经常变（半年一动）→ 二级</div></div></div></div><div class="scene closing-bg" id="s5"><div class="closing-text">米悦说说 · 数据治理实战</div><div class="closing-brand">米悦说说</div></div>
+
+<script>
+var scenes=[{"type": "title", "text": "第二章 主数据二级分类模型：谁该管、谁不该管", "duration": 15.2}, {"type": "content", "title": "传统主数据治理的问题", "points": ["传统思路：把所有主数据列出来，用同一套方法治理。", "主数据种类太多，边界模糊", "不同主数据的业务价值完全不同", "用同一套方法治理所有主数据，成本高、效率低", "很多主数据都有系统在管了，还在重复建设"], "duration": 15.2}, {"type": "content", "title": "二级主数据分类模型", "points": ["├── 一级主数据（强管控）", "│   ├── 核心稳定、跨系统共享、变更不频繁", "│   ├── 典型示例：", "│   │   ├── 组织架构（公司、部门、分子公司）", "│   │   ├── 人员主数据（员工编号、姓名、岗位）"], "duration": 15.2}, {"type": "content", "title": "核心洞察", "points": ["二级主数据的真正价值不是\"治理\"，而是\"嵌入业务系统功能设计\"。", "传统思路：先建主数据平台，再谈应用", "米悦说说思路：", "一级主数据 → 平台统一管理（标准动作）", "二级主数据 → 在业务系统设计时就把数据架构考虑进去"], "duration": 15.2}, {"type": "content", "title": "关键判断标准", "points": ["如何判断一个主数据是\"一级\"还是\"二级\"？", "问自己三个问题：", "1. 这个数据会变吗？", "├── 几乎不变（3年一动）→ 一级", "└── 经常变（半年一动）→ 二级"], "duration": 15.2}, {"type": "closing", "text": "米悦说说 · 数据治理实战", "duration": 14.9}];
+var DUR=[15.2, 15.2, 15.2, 15.2, 15.2, 14.9];
+var TOTAL=DUR.reduce(function(a,b){return a+b;},0);
+var t=0;
+for(var i=0;i<scenes.length;i++){
+  (function(ii){
+    setTimeout(function(){
+      document.querySelectorAll('.scene').forEach(function(s,i){s.classList.toggle('active',i===ii);});
+      var tl=gsap.timeline();
+      if(ii===0){
+        tl.from('.title-main',{opacity:0,y:50,duration:1.5,ease:'power3.out'})
+          .from('.title-sub',{opacity:0,y:30,duration:.8}, '-=.6')
+          .from('.title-ch',{opacity:0,y:30,duration:.8},'-=.4');
+      }else if(ii===scenes.length-1){
+        tl.from('.closing-text',{opacity:0,scale:.85,duration:1.2,ease:'back.out(1.7)'})
+          .from('.closing-brand',{opacity:0,y:20,duration:.8},'-=.4');
+      }else{
+        var tEl=document.getElementById('t'+ii);
+        var gEl=document.getElementById('g'+ii);
+        if(tEl) tl.from(tEl,{opacity:0,x:-40,duration:.8,ease:'power2.out'});
+        if(gEl) tl.from(gEl.querySelectorAll('.point-card'),{opacity:0,y:40,stagger:.2,duration:.7,ease:'power2.out'},'-=.3');
+      }
+    },t*1000);
+  })(i);
+  t+=scenes[i].duration||5;
+}
+</script>
+</body></html>

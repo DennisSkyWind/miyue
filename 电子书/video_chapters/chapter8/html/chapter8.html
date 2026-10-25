@@ -1,0 +1,74 @@
+<!doctype html><html lang="zh"><head><meta charset="UTF-8"/>
+<meta name="viewport" content="width=1920,height=1080"/>
+<title>数据治理实战·第8章</title>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<style>@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700;900&display=swap');
+*{margin:0;padding:0;box-sizing:border-box;}
+html,body{width:1920px;height:1080px;overflow:hidden;background:#0a0e1a;font-family:'Noto Sans CJK SC','PingFang SC','Microsoft YaHei',sans-serif;}
+
+#bg-grid{position:fixed;inset:0;opacity:0.05;pointer-events:none;
+  background-image:linear-gradient(rgba(59,130,246,.5) 1px,transparent 1px),
+  linear-gradient(90deg, rgba(59,130,246,.5) 1px,transparent 1px);
+  background-size:60px 60px;}
+.accent{position:fixed;top:0;left:0;right:0;height:4px;
+  background:linear-gradient(90deg,#1e3a6e,#3b82f6,#1e3a6e);z-index:10;}
+.badge{position:fixed;bottom:40px;right:60px;font-size:22px;color:rgba(255,255,255,.2);
+  letter-spacing:.2em;z-index:10;}
+.scene{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;
+  flex-direction:column;opacity:0;pointer-events:none;}
+.scene.active{opacity:1;pointer-events:auto;}
+.title-bg{background:linear-gradient(135deg,#0a1628,#1a3a5c,#0a1628);}
+.title-main{font-size:78px;font-weight:900;color:#fff;letter-spacing:.08em;
+  text-align:center;text-shadow:0 0 80px rgba(59,130,246,.4);}
+.title-sub{font-size:26px;color:#93c5fd;margin-top:20px;letter-spacing:.3em;}
+.title-ch{font-size:20px;color:#60a5fa;margin-top:40px;letter-spacing:.5em;}
+.content-bg{background:linear-gradient(180deg,#0f172a,#1e293b);}
+.content-inner{max-width:1400px;width:100%;padding:0 80px;}
+.content-title{font-size:50px;font-weight:700;color:#fff;margin-bottom:48px;
+  letter-spacing:.05em;position:relative;padding-left:24px;}
+.content-title::before{content:'';position:absolute;left:0;top:10%;height:80%;width:6px;
+  background:linear-gradient(180deg,#3b82f6,#60a5fa);border-radius:3px;}
+.points-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(580px,1fr));gap:18px;}
+.point-card{background:rgba(255,255,255,.04);border:1px solid rgba(59,130,246,.2);
+  border-radius:14px;padding:22px 30px;font-size:28px;color:#e2e8f0;
+  line-height:1.6;display:flex;align-items:flex-start;gap:14px;}
+.point-card::before{content:'▶';color:#3b82f6;font-size:18px;margin-top:4px;flex-shrink:0;}
+.closing-bg{background:linear-gradient(135deg,#0a1628,#1a2a4a);}
+.closing-text{font-size:54px;font-weight:700;color:#fff;text-align:center;
+  letter-spacing:.1em;text-shadow:0 0 40px rgba(59,130,246,.3);}
+.closing-brand{font-size:26px;color:#60a5fa;margin-top:28px;letter-spacing:.4em;}
+</style>
+</head><body>
+<div id="bg-grid"></div><div class="accent"></div>
+<div class="badge">第8/10章</div>
+<div class="scene title-bg" id="s0"><div class="title-main">第九章 实战案例：某药企数据治理项目复盘</div><div class="title-sub">数据治理实战</div><div class="title-ch">第8章</div></div><div class="scene content-bg" id="s1"><div class="content-inner"><div class="content-title" id="t1">问题</div><div class="points-grid" id="g1"><div class="point-card">注：以下案例来自真实企业，已做脱敏处理</div></div></div></div><div class="scene content-bg" id="s2"><div class="content-inner"><div class="content-title" id="t2">项目背景</div><div class="points-grid" id="g2"><div class="point-card">时间线：</div><div class="point-card">2023：平台采购与试点落地（大数据平台、数据治理平台、BI平台）</div><div class="point-card">2024：部门级需求数据入湖与团队能力沉淀</div><div class="point-card">2025：组织建立与业务赋能</div><div class="point-card">数据资产：22套业务系统 / 6.5TB / 34.4亿条记录</div><div class="point-card">制度建设：11项已发布制度</div></div></div></div><div class="scene content-bg" id="s3"><div class="content-inner"><div class="content-title" id="t3">三大痛点</div><div class="points-grid" id="g3"><div class="point-card">痛点01：报表层级错位，高层获得感不足</div><div class="point-card">现有报表缺高层全局视图</div><div class="point-card">管理者需手动整理信息，难快速掌握业务全貌</div><div class="point-card">痛点02：指标口径不一致，跨模块比对困难</div><div class="point-card">指标定义与计算逻辑不统一</div><div class="point-card">例如：库存，生产关注数量，财务关注金额</div></div></div></div><div class="scene content-bg" id="s4"><div class="content-inner"><div class="content-title" id="t4">项目组织（已脱敏）</div><div class="points-grid" id="g4"><div class="point-card">项目领导小组组长：某高管</div><div class="point-card">副组长：若干高管</div><div class="point-card">项目经理：项目负责人</div><div class="point-card">项目PMO：PMO负责人</div></div></div></div><div class="scene content-bg" id="s5"><div class="content-inner"><div class="content-title" id="t5">解决方案：三驾马车战略</div><div class="points-grid" id="g5"><div class="point-card">战略决策层：高层挂帅，拍板口径、调配资源</div><div class="point-card">业务执行层：每个指标有明确Owner，负责定义与解释</div><div class="point-card">技术支持层：负责技术落地</div></div></div></div><div class="scene closing-bg" id="s6"><div class="closing-text">米悦说说 · 数据治理实战</div><div class="closing-brand">米悦说说</div></div>
+
+<script>
+var scenes=[{"type": "title", "text": "第九章 实战案例：某药企数据治理项目复盘", "duration": 14.1}, {"type": "content", "title": "问题", "points": ["注：以下案例来自真实企业，已做脱敏处理"], "duration": 14.1}, {"type": "content", "title": "项目背景", "points": ["时间线：", "2023：平台采购与试点落地（大数据平台、数据治理平台、BI平台）", "2024：部门级需求数据入湖与团队能力沉淀", "2025：组织建立与业务赋能", "数据资产：22套业务系统 / 6.5TB / 34.4亿条记录", "制度建设：11项已发布制度"], "duration": 14.1}, {"type": "content", "title": "三大痛点", "points": ["痛点01：报表层级错位，高层获得感不足", "现有报表缺高层全局视图", "管理者需手动整理信息，难快速掌握业务全貌", "痛点02：指标口径不一致，跨模块比对困难", "指标定义与计算逻辑不统一", "例如：库存，生产关注数量，财务关注金额"], "duration": 14.1}, {"type": "content", "title": "项目组织（已脱敏）", "points": ["项目领导小组组长：某高管", "副组长：若干高管", "项目经理：项目负责人", "项目PMO：PMO负责人"], "duration": 14.1}, {"type": "content", "title": "解决方案：三驾马车战略", "points": ["战略决策层：高层挂帅，拍板口径、调配资源", "业务执行层：每个指标有明确Owner，负责定义与解释", "技术支持层：负责技术落地"], "duration": 14.1}, {"type": "closing", "text": "米悦说说 · 数据治理实战", "duration": 14.1}];
+var DUR=[14.1, 14.1, 14.1, 14.1, 14.1, 14.1, 14.1];
+var TOTAL=DUR.reduce(function(a,b){return a+b;},0);
+var t=0;
+for(var i=0;i<scenes.length;i++){
+  (function(ii){
+    setTimeout(function(){
+      document.querySelectorAll('.scene').forEach(function(s,i){s.classList.toggle('active',i===ii);});
+      var tl=gsap.timeline();
+      if(ii===0){
+        tl.from('.title-main',{opacity:0,y:50,duration:1.5,ease:'power3.out'})
+          .from('.title-sub',{opacity:0,y:30,duration:.8}, '-=.6')
+          .from('.title-ch',{opacity:0,y:30,duration:.8},'-=.4');
+      }else if(ii===scenes.length-1){
+        tl.from('.closing-text',{opacity:0,scale:.85,duration:1.2,ease:'back.out(1.7)'})
+          .from('.closing-brand',{opacity:0,y:20,duration:.8},'-=.4');
+      }else{
+        var tEl=document.getElementById('t'+ii);
+        var gEl=document.getElementById('g'+ii);
+        if(tEl) tl.from(tEl,{opacity:0,x:-40,duration:.8,ease:'power2.out'});
+        if(gEl) tl.from(gEl.querySelectorAll('.point-card'),{opacity:0,y:40,stagger:.2,duration:.7,ease:'power2.out'},'-=.3');
+      }
+    },t*1000);
+  })(i);
+  t+=scenes[i].duration||5;
+}
+</script>
+</body></html>

@@ -1,0 +1,74 @@
+<!doctype html><html lang="zh"><head><meta charset="UTF-8"/>
+<meta name="viewport" content="width=1920,height=1080"/>
+<title>数据治理实战·第3章</title>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<style>@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700;900&display=swap');
+*{margin:0;padding:0;box-sizing:border-box;}
+html,body{width:1920px;height:1080px;overflow:hidden;background:#0a0e1a;font-family:'Noto Sans CJK SC','PingFang SC','Microsoft YaHei',sans-serif;}
+
+#bg-grid{position:fixed;inset:0;opacity:0.05;pointer-events:none;
+  background-image:linear-gradient(rgba(59,130,246,.5) 1px,transparent 1px),
+  linear-gradient(90deg, rgba(59,130,246,.5) 1px,transparent 1px);
+  background-size:60px 60px;}
+.accent{position:fixed;top:0;left:0;right:0;height:4px;
+  background:linear-gradient(90deg,#1e3a6e,#3b82f6,#1e3a6e);z-index:10;}
+.badge{position:fixed;bottom:40px;right:60px;font-size:22px;color:rgba(255,255,255,.2);
+  letter-spacing:.2em;z-index:10;}
+.scene{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;
+  flex-direction:column;opacity:0;pointer-events:none;}
+.scene.active{opacity:1;pointer-events:auto;}
+.title-bg{background:linear-gradient(135deg,#0a1628,#1a3a5c,#0a1628);}
+.title-main{font-size:78px;font-weight:900;color:#fff;letter-spacing:.08em;
+  text-align:center;text-shadow:0 0 80px rgba(59,130,246,.4);}
+.title-sub{font-size:26px;color:#93c5fd;margin-top:20px;letter-spacing:.3em;}
+.title-ch{font-size:20px;color:#60a5fa;margin-top:40px;letter-spacing:.5em;}
+.content-bg{background:linear-gradient(180deg,#0f172a,#1e293b);}
+.content-inner{max-width:1400px;width:100%;padding:0 80px;}
+.content-title{font-size:50px;font-weight:700;color:#fff;margin-bottom:48px;
+  letter-spacing:.05em;position:relative;padding-left:24px;}
+.content-title::before{content:'';position:absolute;left:0;top:10%;height:80%;width:6px;
+  background:linear-gradient(180deg,#3b82f6,#60a5fa);border-radius:3px;}
+.points-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(580px,1fr));gap:18px;}
+.point-card{background:rgba(255,255,255,.04);border:1px solid rgba(59,130,246,.2);
+  border-radius:14px;padding:22px 30px;font-size:28px;color:#e2e8f0;
+  line-height:1.6;display:flex;align-items:flex-start;gap:14px;}
+.point-card::before{content:'▶';color:#3b82f6;font-size:18px;margin-top:4px;flex-shrink:0;}
+.closing-bg{background:linear-gradient(135deg,#0a1628,#1a2a4a);}
+.closing-text{font-size:54px;font-weight:700;color:#fff;text-align:center;
+  letter-spacing:.1em;text-shadow:0 0 40px rgba(59,130,246,.3);}
+.closing-brand{font-size:26px;color:#60a5fa;margin-top:28px;letter-spacing:.4em;}
+</style>
+</head><body>
+<div id="bg-grid"></div><div class="accent"></div>
+<div class="badge">第3/10章</div>
+<div class="scene title-bg" id="s0"><div class="title-main">第三章 治理模式选择：集中制、联邦制还是混合制</div><div class="title-sub">数据治理实战</div><div class="title-ch">第3章</div></div><div class="scene content-bg" id="s1"><div class="content-inner"><div class="content-title" id="t1">两种传统模式的问题</div><div class="points-grid" id="g1"><div class="point-card">集中制（所有主数据统一到主数据平台管理）</div><div class="point-card">├── 优点：标准统一、管控到位</div><div class="point-card">└── 缺点：业务响应慢，平台审批链路长，容易阻塞业务</div><div class="point-card">联邦制（各业务系统各自管理）</div><div class="point-card">├── 优点：业务响应快</div></div></div></div><div class="scene content-bg" id="s2"><div class="content-inner"><div class="content-title" id="t2">现代企业的现实</div><div class="points-grid" id="g2"><div class="point-card">在现代企业中，几乎所有主数据都有系统在管理了：</div><div class="point-card">结论：在现代企业中，几乎没有"没有系统管理的主数据"了。</div></div></div></div><div class="scene content-bg" id="s3"><div class="content-inner"><div class="content-title" id="t3">混合制模式：现代企业的主流选择</div><div class="points-grid" id="g3"><div class="point-card">混合制 = 源端治理 + 平台兜底</div><div class="point-card">针对已有系统管理的主数据</div><div class="point-card">└── 源端治理（首选方式）</div><div class="point-card">├── 在数据源头进行治理</div><div class="point-card">├── 业务系统负责维护和标准化</div></div></div></div><div class="scene content-bg" id="s4"><div class="content-inner"><div class="content-title" id="t4">为什么源端治理更好？</div><div class="points-grid" id="g4"><div class="point-card">集中制的问题：</div><div class="point-card">业务系统需要主数据</div><div class="point-card">向主数据平台申请</div><div class="point-card">平台审批确认</div><div class="point-card">返回业务系统</div></div></div></div><div class="scene closing-bg" id="s5"><div class="closing-text">米悦说说 · 数据治理实战</div><div class="closing-brand">米悦说说</div></div>
+
+<script>
+var scenes=[{"type": "title", "text": "第三章 治理模式选择：集中制、联邦制还是混合制", "duration": 12.1}, {"type": "content", "title": "两种传统模式的问题", "points": ["集中制（所有主数据统一到主数据平台管理）", "├── 优点：标准统一、管控到位", "└── 缺点：业务响应慢，平台审批链路长，容易阻塞业务", "联邦制（各业务系统各自管理）", "├── 优点：业务响应快"], "duration": 12.1}, {"type": "content", "title": "现代企业的现实", "points": ["在现代企业中，几乎所有主数据都有系统在管理了：", "结论：在现代企业中，几乎没有\"没有系统管理的主数据\"了。"], "duration": 12.1}, {"type": "content", "title": "混合制模式：现代企业的主流选择", "points": ["混合制 = 源端治理 + 平台兜底", "针对已有系统管理的主数据", "└── 源端治理（首选方式）", "├── 在数据源头进行治理", "├── 业务系统负责维护和标准化"], "duration": 12.1}, {"type": "content", "title": "为什么源端治理更好？", "points": ["集中制的问题：", "业务系统需要主数据", "向主数据平台申请", "平台审批确认", "返回业务系统"], "duration": 12.1}, {"type": "closing", "text": "米悦说说 · 数据治理实战", "duration": 12.1}];
+var DUR=[12.1, 12.1, 12.1, 12.1, 12.1, 12.1];
+var TOTAL=DUR.reduce(function(a,b){return a+b;},0);
+var t=0;
+for(var i=0;i<scenes.length;i++){
+  (function(ii){
+    setTimeout(function(){
+      document.querySelectorAll('.scene').forEach(function(s,i){s.classList.toggle('active',i===ii);});
+      var tl=gsap.timeline();
+      if(ii===0){
+        tl.from('.title-main',{opacity:0,y:50,duration:1.5,ease:'power3.out'})
+          .from('.title-sub',{opacity:0,y:30,duration:.8}, '-=.6')
+          .from('.title-ch',{opacity:0,y:30,duration:.8},'-=.4');
+      }else if(ii===scenes.length-1){
+        tl.from('.closing-text',{opacity:0,scale:.85,duration:1.2,ease:'back.out(1.7)'})
+          .from('.closing-brand',{opacity:0,y:20,duration:.8},'-=.4');
+      }else{
+        var tEl=document.getElementById('t'+ii);
+        var gEl=document.getElementById('g'+ii);
+        if(tEl) tl.from(tEl,{opacity:0,x:-40,duration:.8,ease:'power2.out'});
+        if(gEl) tl.from(gEl.querySelectorAll('.point-card'),{opacity:0,y:40,stagger:.2,duration:.7,ease:'power2.out'},'-=.3');
+      }
+    },t*1000);
+  })(i);
+  t+=scenes[i].duration||5;
+}
+</script>
+</body></html>
