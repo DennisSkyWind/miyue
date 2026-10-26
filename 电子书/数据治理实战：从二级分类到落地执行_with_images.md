@@ -32,7 +32,7 @@
 
 
 
-![diag_001](file:///home/ubuntu/hf-demo/diagram-img/diag_001.png)
+![diag_001](diagram-img/diag_001.png)
 
 
 
@@ -83,7 +83,7 @@ AI转型就是空谈
 
 
 
-![diag_002](file:///home/ubuntu/hf-demo/diagram-img/diag_002.png)
+![diag_002](diagram-img/diag_002.png)
 
 
 
@@ -91,7 +91,7 @@ AI转型就是空谈
 
 
 
-![diag_003](file:///home/ubuntu/hf-demo/diagram-img/diag_003.png)
+![diag_003](diagram-img/diag_003.png)
 
 
 
@@ -99,7 +99,7 @@ AI转型就是空谈
 
 
 
-![diag_004](file:///home/ubuntu/hf-demo/diagram-img/diag_004.png)
+![diag_004](diagram-img/diag_004.png)
 
 
 
@@ -107,7 +107,7 @@ AI转型就是空谈
 
 
 
-![diag_005](file:///home/ubuntu/hf-demo/diagram-img/diag_005.png)
+![diag_005](diagram-img/diag_005.png)
 
 
 
@@ -115,7 +115,7 @@ AI转型就是空谈
 
 
 
-![diag_006](file:///home/ubuntu/hf-demo/diagram-img/diag_006.png)
+![diag_006](diagram-img/diag_006.png)
 
 
 
@@ -123,7 +123,7 @@ AI转型就是空谈
 
 
 
-![diag_007](file:///home/ubuntu/hf-demo/diagram-img/diag_007.png)
+![diag_007](diagram-img/diag_007.png)
 
 
 
@@ -131,7 +131,7 @@ AI转型就是空谈
 
 
 
-![diag_008](file:///home/ubuntu/hf-demo/diagram-img/diag_008.png)
+![diag_008](diagram-img/diag_008.png)
 
 
 
@@ -139,7 +139,7 @@ AI转型就是空谈
 
 
 
-![diag_009](file:///home/ubuntu/hf-demo/diagram-img/diag_009.png)
+![diag_009](diagram-img/diag_009.png)
 
 
 
@@ -147,7 +147,7 @@ AI转型就是空谈
 
 
 
-![diag_010](file:///home/ubuntu/hf-demo/diagram-img/diag_010.png)
+![diag_010](diagram-img/diag_010.png)
 
 
 
@@ -201,7 +201,7 @@ D. 有明确的部门和岗位负责（恭喜你，做对了）
 
 
 
-![diag_011](file:///home/ubuntu/hf-demo/diagram-img/diag_011.png)
+![diag_011](diagram-img/diag_011.png)
 
 
 
@@ -238,7 +238,7 @@ D. 有明确的部门和岗位负责（恭喜你，做对了）
 
 
 
-![diag_012](file:///home/ubuntu/hf-demo/diagram-img/diag_012.png)
+![diag_012](diagram-img/diag_012.png)
 
 
 
@@ -264,7 +264,7 @@ D. 有明确的部门和岗位负责（恭喜你，做对了）
 
 
 
-![diag_013](file:///home/ubuntu/hf-demo/diagram-img/diag_013.png)
+![diag_013](diagram-img/diag_013.png)
 
 
 
@@ -282,7 +282,7 @@ D. 有明确的部门和岗位负责（恭喜你，做对了）
 
 
 
-![diag_014](file:///home/ubuntu/hf-demo/diagram-img/diag_014.png)
+![diag_014](diagram-img/diag_014.png)
 
 
 
@@ -363,7 +363,7 @@ D. 有明确的部门和岗位负责（恭喜你，做对了）
 
 
 
-![diag_015](file:///home/ubuntu/hf-demo/diagram-img/diag_015.png)
+![diag_015](diagram-img/diag_015.png)
 
 
 
@@ -453,7 +453,7 @@ D. 有明确的部门和岗位负责（恭喜你，做对了）
 
 
 
-![diag_016](file:///home/ubuntu/hf-demo/diagram-img/diag_016.png)
+![diag_016](diagram-img/diag_016.png)
 
 
 
@@ -661,7 +661,7 @@ IT部门买一套平台
 
 
 
-![diag_017](file:///home/ubuntu/hf-demo/diagram-img/diag_017.png)
+![diag_017](diagram-img/diag_017.png)
 
 
 
@@ -677,7 +677,7 @@ IT部门买一套平台
 
 
 
-![diag_018](file:///home/ubuntu/hf-demo/diagram-img/diag_018.png)
+![diag_018](diagram-img/diag_018.png)
 
 
 
@@ -743,7 +743,7 @@ IT部门买一套平台
 
 
 
-![diag_019](file:///home/ubuntu/hf-demo/diagram-img/diag_019.png)
+![diag_019](diagram-img/diag_019.png)
 
 
 
@@ -883,7 +883,7 @@ COE 最大的风险是**变成瓶颈**——所有事都要经过它。
 
 
 
-![diag_020](file:///home/ubuntu/hf-demo/diagram-img/diag_020.png)
+![diag_020](diagram-img/diag_020.png)
 
 
 
@@ -909,7 +909,7 @@ COE 最大的风险是**变成瓶颈**——所有事都要经过它。
 
 
 
-![diag_021](file:///home/ubuntu/hf-demo/diagram-img/diag_021.png)
+![diag_021](diagram-img/diag_021.png)
 
 
 
@@ -1064,7 +1064,7 @@ COE 最大的风险是**变成瓶颈**——所有事都要经过它。
 
 
 
-![diag_022](file:///home/ubuntu/hf-demo/diagram-img/diag_022.png)
+![diag_022](diagram-img/diag_022.png)
 
 
 
@@ -1094,7 +1094,7 @@ COE 最大的风险是**变成瓶颈**——所有事都要经过它。
 
 
 
-![diag_023](file:///home/ubuntu/hf-demo/diagram-img/diag_023.png)
+![diag_023](diagram-img/diag_023.png)
 
 
 
@@ -1112,7 +1112,7 @@ COE 最大的风险是**变成瓶颈**——所有事都要经过它。
 
 
 
-![diag_024](file:///home/ubuntu/hf-demo/diagram-img/diag_024.png)
+![diag_024](diagram-img/diag_024.png)
 
 
 
@@ -1134,7 +1134,7 @@ COE 最大的风险是**变成瓶颈**——所有事都要经过它。
 
 
 
-![diag_025](file:///home/ubuntu/hf-demo/diagram-img/diag_025.png)
+![diag_025](diagram-img/diag_025.png)
 
 
 
@@ -1172,11 +1172,23 @@ COE 最大的风险是**变成瓶颈**——所有事都要经过它。
 
 ## 第六章 源端治理四步法
 
+```
+第一步：定标准
+└── 在源头系统定义数据标准
+└── 标准要嵌入业务流程，不是单独的审批流程
 
+第二步：强执行
+└── 源端系统强制执行数据校验
+└── 不符合标准的数据进不去
 
-![diag_026](file:///home/ubuntu/hf-demo/diagram-img/diag_026.png)
+第三步：快响应
+└── 数据变更在源端实时生效
+└── 不用等平台审批
 
-
+第四步：平台只分发
+└── 主数据平台负责数据分发和共享
+└── 不是数据的"审批关卡"
+```
 
 ---
 
@@ -1186,7 +1198,7 @@ COE 最大的风险是**变成瓶颈**——所有事都要经过它。
 
 
 
-![diag_027](file:///home/ubuntu/hf-demo/diagram-img/diag_027.png)
+![diag_026](diagram-img/diag_026.png)
 
 
 
@@ -1194,7 +1206,7 @@ COE 最大的风险是**变成瓶颈**——所有事都要经过它。
 
 
 
-![diag_028](file:///home/ubuntu/hf-demo/diagram-img/diag_028.png)
+![diag_027](diagram-img/diag_027.png)
 
 
 
@@ -1236,11 +1248,21 @@ COE 最大的风险是**变成瓶颈**——所有事都要经过它。
 
 ### 主数据内部的正确顺序
 
+```
+① HR主数据（最优先！）
+   ├── 人员：员工编号、姓名、部门、岗位、汇报线
+   ├── 组织：组织架构、分子公司、部门层级
+   └── 原因：所有业务都落实到人和组织
 
+② 产品主数据
+   └── 谁生产、谁销售、谁负责
 
-![diag_029](file:///home/ubuntu/hf-demo/diagram-img/diag_029.png)
+③ 客户主数据
+   └── 谁负责、谁维护、谁跟进
 
-
+④ 供应商主数据
+   └── 谁采购、谁对接、谁审核
+```
 
 > **注意**：这个顺序的前提，是主数据范围已经由盘点确认（见第二章）。
 > 如果主数据清单是照搬经验得来的，那么"先治HR"这个排序本身也就失去了依据——
@@ -1261,17 +1283,25 @@ COE 最大的风险是**变成瓶颈**——所有事都要经过它。
 
 ### 核心思路：先确权，后建组织
 
+```
+数据治理的第一步，不是技术，是"确权"
 
+确权 = 确立数据管理部门对全公司数据管理的职责和权限
 
-![diag_030](file:///home/ubuntu/hf-demo/diagram-img/diag_030.png)
+路径：
+① 先出《数据管理办法》（一级概要性制度）
+   └── 不用很细，是一级概要性制度
+   └── 核心：确立数据管理部门的责权
 
-
+② 再通过这个制度去组建治理组织
+   └── 用制度作为"尚方宝剑"
+```
 
 ### 《数据管理办法》核心内容
 
 
 
-![diag_031](file:///home/ubuntu/hf-demo/diagram-img/diag_031.png)
+![diag_028](diagram-img/diag_028.png)
 
 
 
@@ -1279,7 +1309,7 @@ COE 最大的风险是**变成瓶颈**——所有事都要经过它。
 
 
 
-![diag_032](file:///home/ubuntu/hf-demo/diagram-img/diag_032.png)
+![diag_029](diagram-img/diag_029.png)
 
 
 
@@ -1302,7 +1332,7 @@ COE 最大的风险是**变成瓶颈**——所有事都要经过它。
 
 
 
-![diag_033](file:///home/ubuntu/hf-demo/diagram-img/diag_033.png)
+![diag_030](diagram-img/diag_030.png)
 
 
 
@@ -1365,7 +1395,7 @@ IT制定标准 → 强制HR执行 → HR不配合 → 推不动
 
 
 
-![diag_034](file:///home/ubuntu/hf-demo/diagram-img/diag_034.png)
+![diag_031](diagram-img/diag_031.png)
 
 
 
@@ -1373,7 +1403,7 @@ IT制定标准 → 强制HR执行 → HR不配合 → 推不动
 
 
 
-![diag_035](file:///home/ubuntu/hf-demo/diagram-img/diag_035.png)
+![diag_032](diagram-img/diag_032.png)
 
 
 
@@ -1381,7 +1411,7 @@ IT制定标准 → 强制HR执行 → HR不配合 → 推不动
 
 
 
-![diag_036](file:///home/ubuntu/hf-demo/diagram-img/diag_036.png)
+![diag_033](diagram-img/diag_033.png)
 
 
 
@@ -1399,7 +1429,7 @@ IT制定标准 → 强制HR执行 → HR不配合 → 推不动
 
 
 
-![diag_037](file:///home/ubuntu/hf-demo/diagram-img/diag_037.png)
+![diag_034](diagram-img/diag_034.png)
 
 
 
@@ -1407,7 +1437,7 @@ IT制定标准 → 强制HR执行 → HR不配合 → 推不动
 
 
 
-![diag_038](file:///home/ubuntu/hf-demo/diagram-img/diag_038.png)
+![diag_035](diagram-img/diag_035.png)
 
 
 
@@ -1415,7 +1445,7 @@ IT制定标准 → 强制HR执行 → HR不配合 → 推不动
 
 
 
-![diag_039](file:///home/ubuntu/hf-demo/diagram-img/diag_039.png)
+![diag_036](diagram-img/diag_036.png)
 
 
 
@@ -1423,7 +1453,7 @@ IT制定标准 → 强制HR执行 → HR不配合 → 推不动
 
 
 
-![diag_040](file:///home/ubuntu/hf-demo/diagram-img/diag_040.png)
+![diag_037](diagram-img/diag_037.png)
 
 
 
@@ -1431,7 +1461,7 @@ IT制定标准 → 强制HR执行 → HR不配合 → 推不动
 
 
 
-![diag_041](file:///home/ubuntu/hf-demo/diagram-img/diag_041.png)
+![diag_038](diagram-img/diag_038.png)
 
 
 
@@ -1495,7 +1525,7 @@ IT制定标准 → 强制HR执行 → HR不配合 → 推不动
 
 
 
-![diag_042](file:///home/ubuntu/hf-demo/diagram-img/diag_042.png)
+![diag_039](diagram-img/diag_039.png)
 
 
 
@@ -1503,7 +1533,7 @@ IT制定标准 → 强制HR执行 → HR不配合 → 推不动
 
 
 
-![diag_043](file:///home/ubuntu/hf-demo/diagram-img/diag_043.png)
+![diag_040](diagram-img/diag_040.png)
 
 
 
@@ -1511,7 +1541,7 @@ IT制定标准 → 强制HR执行 → HR不配合 → 推不动
 
 
 
-![diag_044](file:///home/ubuntu/hf-demo/diagram-img/diag_044.png)
+![diag_041](diagram-img/diag_041.png)
 
 
 
@@ -1519,7 +1549,7 @@ IT制定标准 → 强制HR执行 → HR不配合 → 推不动
 
 
 
-![diag_045](file:///home/ubuntu/hf-demo/diagram-img/diag_045.png)
+![diag_042](diagram-img/diag_042.png)
 
 
 ┌─────────────────────────┐
