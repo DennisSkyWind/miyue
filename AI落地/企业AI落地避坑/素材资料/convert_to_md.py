@@ -110,13 +110,29 @@ def docx_to_md(path):
     return '\n'.join(out)
 
 # ────────────────────────── PPTX ──────────────────────────
+def _iter_shapes(shapes):
+    """递归展开组合形状(group shape)，否则 PPT 中的分组文本会整段丢失。"""
+    for sh in shapes:
+        yield sh
+        try:
+            sub_shapes = getattr(sh, 'shapes', None)
+        except Exception:
+            sub_shapes = None
+        if sub_shapes is not None:
+            try:
+                for sub in _iter_shapes(sub_shapes):
+                    yield sub
+            except Exception:
+                pass
+
+
 def pptx_to_md(path):
     from pptx import Presentation
     prs = Presentation(path)
     out = []
     for i, slide in enumerate(prs.slides, 1):
         texts = []
-        for sh in slide.shapes:
+        for sh in _iter_shapes(slide.shapes):
             if sh.has_table:
                 trows = []
                 for r in sh.table.rows:
