@@ -30,6 +30,7 @@ NAMES = """陈娇 毛健 刘晋宇 杨泽标 赵威 黄思杰 左婕 马瑞 鲁�
 贺明 赵园 赵飞 郭丰泳 陈坚 韩璐尧 颜炜 高童 黄元红 黄楷浩 黄爱苏 王克 刘富贵
 蔡金勇 钟江 宋良玉 涂菲娜 原京 冯海洋 单海东 钱伟 黄相 段宏莉 李士峰
 杨萌 李蕾 刘一凡 赵亚泉 杨晓柔 蒋腾云 杨继尧 李润祥 邵凯丽 李婵 许睿
+王晓路 董娟 王忠良 夏文蝶 夏文洁
 王秋 李思凡 沈棋帆 严宗明 张浩鹏 庄兴巧 包广昆 杨兴宇 杨树文 王非
 冯雪婷 郭姜福 李瑞丽 杨泽 赵威 李博珩 张轶博 栾可 朱林岗 马旭平 程艳琴
 冉现超 牟芃颖 范麒波 江炜 李芸莹 余亚卓 周慧敏 王友祥 李小琦 黄红峰
@@ -52,7 +53,8 @@ def desensitize(text):
 def main():
     total = 0
     for f in sorted(glob.glob(os.path.join(OUT, '*.md'))):
-        if os.path.basename(f).startswith('00_'):
+        bn = os.path.basename(f)
+        if bn.startswith('00_') or bn.startswith('README'):
             continue
         s = open(f, encoding='utf-8').read()
         orig = s
