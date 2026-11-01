@@ -63,6 +63,32 @@ HEADER = """# AI 未成之路
 > **本书结论不是任何一家企业的专利**——素材来自一家大型制造企业三年的实践，但书里讲的是制造业六个环节的共性规律。
 """
 
+CONNECT = """---
+
+## 阅读指南：本书怎么读
+
+> **这一节是全书的连接件**：各章导语、全书金句墙、三条主线索引，以及出版前必须清零的待定稿清单。
+
+"""
+
+
+def read_connect():
+    f = DRAFT / "全书串联稿.md"
+    if not f.exists():
+        return ""
+    body = f.read_text(encoding="utf-8")
+    # 去掉文件自身的一级标题，保留内容
+    lines = body.split("\n")
+    i = 0
+    while i < len(lines) and not lines[i].strip():
+        i += 1
+    if i < len(lines) and lines[i].startswith("# "):
+        lines = lines[i + 1:]
+    while lines and not lines[0].strip():
+        lines = lines[1:]
+    return "\n".join(lines)
+
+
 FOOTER = """
 ---
 
@@ -91,6 +117,13 @@ def strip_h1(text: str) -> str:
 
 def main():
     parts = [HEADER.rstrip(), ""]
+    conn = read_connect()
+    if conn:
+        parts.append("\n---\n")
+        parts.append(CONNECT.rstrip())
+        parts.append("")
+        parts.append(conn.rstrip())
+        parts.append("")
     for fname, _ in CHAPTERS:
         p = DRAFT / fname
         if not p.exists():
