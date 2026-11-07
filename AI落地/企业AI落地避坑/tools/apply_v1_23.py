@@ -4,7 +4,7 @@
 import re, sys, shutil, os
 
 SRC = 'AI未成之路_定稿候选版_v1.22_20261107.md'
-DST = 'AI未成之路_定稿候选版_v1.23_20261107.md'
+DST = 'AI未成之路_定稿候选版_v1.24_20261107.md'
 shutil.copy(SRC, DST)
 t = open(DST, encoding='utf-8').read()
 ok, fail = [], []

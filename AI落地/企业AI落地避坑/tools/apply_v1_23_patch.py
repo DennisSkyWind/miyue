@@ -3,7 +3,7 @@
 """v1.23 补丁：修 2 条失败项 + 新增 2 个小节。"""
 import re, sys
 
-DST = 'AI未成之路_定稿候选版_v1.23_20261107.md'
+DST = 'AI未成之路_定稿候选版_v1.24_20261107.md'
 t = open(DST, encoding='utf-8').read()
 ok, fail = [], []
 

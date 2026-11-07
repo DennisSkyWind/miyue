@@ -8,7 +8,7 @@
 """
 import re, html, sys, os
 
-SRC = '/home/ubuntu/miyue/AI落地/企业AI落地避坑/AI未成之路_定稿候选版_v1.23_20261107.md'
+SRC = '/home/ubuntu/miyue/AI落地/企业AI落地避坑/AI未成之路_定稿候选版_v1.24_20261107.md'
 OUT = '/home/ubuntu/miyue/AI落地/企业AI落地避坑/草稿/AI未成之路_出版版.html'
 
 CJK = '\u3400-\u4dbf\u4e00-\u9fff\uf900-\ufaff\u3000-\u303f\uff00-\uffef'

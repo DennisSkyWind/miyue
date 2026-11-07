@@ -3,7 +3,7 @@
 """第7组：最后 6 项，全部按推荐。"""
 import re, sys
 
-P = 'AI未成之路_定稿候选版_v1.23_20261107.md'
+P = 'AI未成之路_定稿候选版_v1.24_20261107.md'
 t = open(P, encoding='utf-8').read()
 ok, fail = [], []
 
