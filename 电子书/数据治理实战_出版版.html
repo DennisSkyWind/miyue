@@ -486,7 +486,7 @@ ol.lst>li::marker{color:var(--accent);font-family:var(--sans);font-size:.88em;fo
 <p>这是很多人没意识到的：数据入湖不是「搬数据」，是<strong>让所有数据第一次碰面</strong>。</p>
 <ol class="lst"><li>数据入湖</li><li>各系统的数据第一次被放在同一张地图上</li><li>冲突、重复、缺失、口径不一 自动暴露</li><li>这些「问题」就是治理的起点清单</li><li>问题清单 反推治理范围 圈定主数据</li></ol>
 <p><strong>换句话说：治理范围是「问题暴露」出来的，不是「规划」出来的。</strong></p>
-<p>这就是老周说的「入湖就已经是数据治理的开始」的技术含义。</p>
+<p>这就是「入湖就已经是数据治理的开始」这句话的技术含义。</p>
 <h5 id="s033">入湖的产出直接喂给主数据判断</h5>
 <p>书里第八章补充（续）讲的「入湖问题处理流程」，其实是这个机制的落地版本：</p>
 <div class="frame"><div class="frame-row">数据入湖</div></div>
@@ -503,7 +503,7 @@ ol.lst>li::marker{color:var(--accent);font-family:var(--sans);font-size:.88em;fo
 <ol class="lst"><li>某个数据字段是不是主数据，看它在不在关键指标的计算链路里</li><li>• 在「客户主数据」里 客户怎么算收入？算留存？算客单价？</li><li>它是不是真主数据，指标会告诉你</li><li>• 不在任何指标链路里 那它就是一个「重要的参考数据」</li><li>治理的优先级和深度，都该往下调</li></ol>
 <p><strong>指标给主数据治理提供了三件事：</strong></p>
 <div class="table-wrap"><table><thead><tr><th>指标提供</th><th>具体作用</th></tr></thead><tbody><tr><td><strong>范围确认</strong></td><td>哪些字段进入了关键指标计算链路，则优先纳入治理</td></tr><tr><td><strong>时机确认</strong></td><td>哪个指标的业务压力大，则这个主数据域先治</td></tr><tr><td><strong>深度确认</strong></td><td>指标要什么精度，则决定治到什么程度（唯一性校验？标准统一？还是跨系统自动分发？）</td></tr></tbody></table></div>
-<p>所以老周那句话要完整地读：</p>
+<p>所以这句话要完整地读：</p>
 <blockquote class="quote gold"><p><strong>根据前文的数据指标确认，才能真正确认哪些是真的主数据，哪些主数据在什么时候、做到何种深度的治理。</strong></p></blockquote>
 <p>翻译成大白话就是：</p>
 <blockquote class="quote gold"><p><strong>主数据清单，不是拍出来的，是「盘出来 + 指标筛出来」的。</strong></p></blockquote>
@@ -511,7 +511,7 @@ ol.lst>li::marker{color:var(--accent);font-family:var(--sans);font-size:.88em;fo
 <hr class="rule">
 <h4 id="s035">回到起点：看企业数据成熟度</h4>
 <p>那么，是不是所有企业都不该先做主数据治理？<strong>不是。</strong></p>
-<p>要看你现在站在哪一级。老周常用的划法是四级，我们把它落成可判断的信号：</p>
+<p>要看你现在站在哪一级。我常用的划法是四级，我们把它落成可判断的信号：</p>
 <div class="table-wrap"><table><thead><tr><th>成熟度</th><th>典型状态</th><th>正确的起点</th><th>常见错误</th></tr></thead><tbody><tr><td><strong>L0 无体系</strong></td><td>没有数据管理制度、没有专门组织、没有资产清单</td><td><strong>先建体系</strong>：制度 → 组织 → 摸家底</td><td>上来就买平台、就定标准</td></tr><tr><td><strong>L1 有制度无全景</strong></td><td>有《数据管理办法》、有数据办，但说不清有多少数据、在哪些系统</td><td><strong>先入湖 + 资产盘点</strong>：让数据见面</td><td>直接挑主数据开工</td></tr><tr><td><strong>L2 有全景有标准</strong></td><td>资产清楚、标准已成体系、平台在跑</td><td><strong>主数据治理可作为突破口</strong>，但范围须由指标复核</td><td>把已有清单当定论，不再验证</td></tr><tr><td><strong>L3 治理常态化</strong></td><td>治理已是日常运营、按业务价值滚动排期</td><td><strong>主数据按指标价值滚动排期</strong>，不再有「起点」问题</td><td>还在纠结「先做什么」</td></tr></tbody></table></div>
 <p><strong>这张表回答了「要看企业数据成熟度再聊这个话题」：</strong></p>
 <ol class="lst"><li>L0/L1 起点是数据治理本身（体系 + 全景）</li><li>L2    起点可以是主数据治理，但清单要复核</li><li>L3    不存在起点问题，只有排期问题</li></ol>
