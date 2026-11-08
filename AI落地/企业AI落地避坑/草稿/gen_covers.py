@@ -25,8 +25,8 @@ BASE = """
 html,body{width:%(W)dpx;height:%(H)dpx;overflow:hidden}
 .cover{width:%(W)dpx;height:%(H)dpx;position:relative;overflow:hidden;
   font-family:"Noto Serif CJK SC","Source Han Serif SC",serif;}
-.main{position:absolute;left:0;right:0;top:0;bottom:132px;
-  padding:0 56px;display:flex;flex-direction:column;justify-content:center}
+.main{position:absolute;left:0;right:0;top:0;bottom:132px;padding:132px 56px 0;
+  display:flex;flex-direction:column;justify-content:center}
 .foot{position:absolute;left:0;right:0;bottom:0;height:132px;
   padding:0 56px;display:flex;align-items:center;justify-content:space-between}
 .sans{font-family:"Noto Sans CJK SC","Source Han Sans SC",sans-serif}
@@ -111,6 +111,7 @@ CSS_C = """
 .nums{font-family:"Noto Serif CJK SC",serif;font-size:22px;line-height:2.0;
   color:#2c2823;margin-bottom:46px}
 .nums .concl{color:#8a8378;font-size:20px}
+.nums b{font-weight:700;font-size:23px}
 .rule{background:#1f1d1a;margin-bottom:32px}
 .author{font-size:20px}
 .foot .cat{font-size:13px;color:#a8a196;letter-spacing:.30em}
@@ -119,7 +120,7 @@ BODY_C = """
 <div class="main">
   <div class="eyebrow">企业 AI 落地复盘</div>
   <div class="title">AI<br>未成之路</div>
-  <div class="nums">数百人参与 · 数十支队伍<br>一百五十余项需求<br>
+  <div class="nums"><b>数百人参与 · 数十支队伍</b><br>一百五十余项需求<br>
     <span class="concl">—— 最终落地：数个场景</span></div>
   <div class="rule"></div>
   <div class="author">米悦说说</div>
